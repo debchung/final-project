@@ -10,7 +10,7 @@
 }
 
 .title-word-2 {
-  --color-1: #DBAD4A;
+  --color-1: #b88e2b;
   --color-2: #6a9691;
   --color-3: #17494D;
 }
@@ -85,7 +85,7 @@ a:visited{
 
 /*general styling*/ 
 html{
-  font-size: 25px;    
+  font-size: 25px;  
 }
 h1{
   text-align: left;
@@ -179,7 +179,7 @@ header nav li a {
   font-size: 12px;
 }
 
-header nav li a:focus, header nav li a:hover{
+header nav li a:focus, header nav li a:hover, .active a{
   color:#022333;
   font-size: 25px;
   background-color:#DBAD4A;
