@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/logo-drk.png">
+    <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- socials icons ––––––––––––––––––––––––––– -->
     <script src="https://kit.fontawesome.com/5c9f2dfb26.js"></script>
@@ -14,44 +15,51 @@
     <title>Debby Chung</title>
 </head>
 <body>
-    <div class="skip">
-        <a href="#main">Skip to main content</a>
-    </div>
+    <a class ="skip" href="#main-content">Skip to main content</a>
     <header>
         <nav>
-            <ul>
+            <ul class="nav_list">
                 <li><a href ="index.html">Debby Chung</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a href="extra.html">Extra</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="debby">
+            <img class="logo-animate" src="images/logo.jpg" alt="dandelion icon logo" id="dandelion-logo" width="200">
+            </img>
+        </div>
     </header>
 
-    <main>
-        <h2>Hi! I'm</h2>
-        <h1>Debby Chung</h1>
-        <img src = "images/index_about_ me.jpeg" width="400" alt = "">
-        <h2>An aspiring product designer</h2>
+    <main class="main-content" id="main-content">
+        <div class="me">
+            <h1>Hi
+                I'm Debby Chung</h1>
+            <h2>An aspiring product designer</h2>
+        </div>
+        
 
-        <h2>Projects</h2>
-        <h3>Here are some projects I've been working on</h3>
-        <img src="images/index_brochure.jpg" width = "200" alt="brochure redesign">
-        <img src="images/index_Contour.jpg"  width = "200" alt="charcoal contour assignment">
-        <img src="images/index_Cross_contour.JPG" width = "200" alt="cross contour assignment">
-        <img src="images/index_lamp.jpeg" width = "200" alt="lamp assignment">
-        <img src="images/index_linear_construction.jpeg" width = "200" alt="linear construction assignment">
-        <img src="images/index_mark_making.JPG" width = "200" alt="mark making assignment">
-        <img src="images/index_MDP.jpeg" width = "200" alt="design work">
-        <img src="images/index_MDP2.jpeg" width = "200" alt="design work">
-        <img src="images/index_MDP3.jpeg" width = "200" alt="design work">
-        <img src="images/index_sketch1.jpeg" width = "200" alt="linear construction sketch">
-        <img src="images/index_sketch2.jpeg" width = "200" alt="linear construction sketch">
-        <img src="images/index_Tone_and_value.JPG" width = "200" alt="tone and value assignment">
+        <div class="projects">
+            <br><br><br>
+            <h2>Here are some projects I've been working on: </h2>
+            <div class="project-img-container">
 
+                <img src="images/index_brochure.jpg" width = "300" alt="brochure redesign">
+                <img src="images/index_Contour.jpg"  width = "300" alt="charcoal contour assignment">
+                <img src="images/index_Cross_contour.JPG" width = "300" alt="cross contour assignment">
+                <img src="images/index_lamp.jpeg" width = "300" alt="lamp assignment">
+                <img src="images/index_linear_construction.jpeg" width = "300" alt="linear construction assignment">
+                <img src="images/index_mark_making.JPG" width = "300" alt="mark making assignment">
+                <img src="images/index_MDP.jpeg" width = "300" alt="design work">
+                <img src="images/index_MDP2.jpeg" width = "300" alt="design work">
+                <img src="images/index_MDP3.jpeg" width = "300" alt="design work">
+                <img src="images/index_sketch1.jpeg" width = "300" alt="linear construction sketch">
+                <img src="images/index_sketch2.jpeg" width = "300" alt="linear construction sketch">
+                <img src="images/index_Tone_and_value.JPG" width = "300" alt="tone and value assignment">
+                </div>
+
+        </div>
     </main>
     <footer>
         <p> &copy; Debby Chung - Web Design 2022-2023</p>
     </footer>
-</body>
-</html>
