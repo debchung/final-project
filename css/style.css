@@ -306,13 +306,14 @@ header nav li a:focus, header nav li a:hover, .active a{
   background-color: #3A5A40;
   width:auto;
   height: auto;
-  border:50px #3A5A40 solid;
+  border:15px #3A5A40 solid;
   border-radius:12px;
 }
 .pin-board {
   display:flex;
   justify-content: center;
   align-items: center;
+  width:300px;
 }
 /* about imgs */
 .food_item img {
@@ -348,6 +349,10 @@ header nav li a:focus, header nav li a:hover, .active a{
   .pin-board-background {
     border:20px #3A5A40 solid;
     border-radius:10px;
+  }
+
+  .pin-board {
+    width:375px;
   }
 
   /* style grid */
@@ -394,6 +399,9 @@ header nav li a:focus, header nav li a:hover, .active a{
   .pin-board-background {
     border:30px #3A5A40 solid;
     border-radius:10px;
+  }
+  .pin-board {
+    width:450px;
   }
   /* style grid */
   .project-img-container  {
