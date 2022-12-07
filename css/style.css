@@ -265,8 +265,10 @@ header nav li a:focus, header nav li a:hover, .active a{
 .project-img-container img:hover {
   filter: grayscale(0%)
 }
-.project-img-container img:focus {
-  border-radius:15px 15px 15px 15px;
+.project-img-container img:focus, .main-content img:focus {
+  border-radius:15px;
+  border: 10px #DBAD4A dotted;
+  filter: grayscale(0%)
 }
 
 /* style flex box */
@@ -294,9 +296,23 @@ header nav li a:focus, header nav li a:hover, .active a{
   flex-wrap: wrap;
   justify-content:space-between;
 }
-.pin-board{
-  display: flex;
+.board-center{
+  display:grid;
   justify-content: center;
+  padding-top: 45px;
+}
+.pin-board-background {
+  display:inline-block;
+  background-color: #3A5A40;
+  width:auto;
+  height: auto;
+  border:50px #3A5A40 solid;
+  border-radius:12px;
+}
+.pin-board {
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 /* about imgs */
 .food_item img {
@@ -328,8 +344,13 @@ header nav li a:focus, header nav li a:hover, .active a{
     margin: -70px 0 0 0;
   }
 
-  /* style grid */
+  /*style pinterest*/
+  .pin-board-background {
+    border:20px #3A5A40 solid;
+    border-radius:10px;
+  }
 
+  /* style grid */
   .project-img-container  {
     display: grid;
     grid-template-columns: 40% 40%;
@@ -351,20 +372,6 @@ header nav li a:focus, header nav li a:hover, .active a{
     padding: 0 0 50px 0;
     grid-gap: 50px;
   }
-
-  .foods {
-    justify-content: center;
-    margin: 40px;
-  }
-
- /* style flexbox */
- .foods img {
-    border-radius: 20px; 
-    width: 40%;
-    height: 80%;
-    
-  }
-
 }
 
 /* Desktop view */
@@ -383,6 +390,11 @@ header nav li a:focus, header nav li a:hover, .active a{
   header nav li a{
     font-size: 20px;
   }
+  /*style pinterest*/
+  .pin-board-background {
+    border:30px #3A5A40 solid;
+    border-radius:10px;
+  }
   /* style grid */
   .project-img-container  {
     display: grid;
@@ -393,11 +405,7 @@ header nav li a:focus, header nav li a:hover, .active a{
     row-gap: 25px;
     grid-template-rows: repeat(3, 280px);
   }
-  /* style flexbox*/
-  .foods {
-    justify-content: center;
-    margin: 40px;
- }
+
  .song-list {
   display:flex;
   flex-wrap: wrap;
@@ -405,13 +413,6 @@ header nav li a:focus, header nav li a:hover, .active a{
   align-content: center;
   padding: 20px;
   }
-  /* style flexbox imgs*/
-  .food_item img {
-        border-radius: 20px; 
-        width: 40%;
-        height: 80%;
-        
-    }
 
 }
 
